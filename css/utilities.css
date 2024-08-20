@@ -43,8 +43,8 @@ pre {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    overflow: auto;
     padding: 0 40px;
+    overflow: hidden;
 }
 
 .card {
@@ -273,4 +273,14 @@ pre {
 
 .p-5 {
     padding: 4rem;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 20px;
+    }
+    .card.flex {
+        flex-direction: column;
+        margin: 0;
+    }
 }
